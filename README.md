@@ -9,9 +9,8 @@ A curated collection of **Agent Skills** for AI agents — following the [Agent 
 git clone https://github.com/limcheehow/samurai-agent-os.git ~/samurai-agent-os
 ln -s ~/samurai-agent-os/skills/profile-enrichment ~/.hermes/skills/
 
-# Option 2: Install the full Kizuna CRM plugin
-hermes plugins install limcheehow/samurai-agent-os
-hermes plugins enable kizuna-crm
+# Option 2: Install the full Kizuna CRM plugin (with enable)
+hermes plugins install limcheehow/samurai-agent-os --enable
 ```
 
 ## Skills

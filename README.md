@@ -53,6 +53,40 @@ This format follows the open [Agent Skills specification](https://agentskills.io
 
 ## Plugins
 
+A **Hermes Plugin** is a shareable bundle that packages a complete agent configuration — persona, system prompt, skills, and tool settings — into a single installable unit. Unlike a standalone skill (which just teaches the agent *how* to do one thing), a plugin can ship an entire team-ready persona with multiple skills pre-wired.
+
+### Plugin vs Skill
+
+| | Skill | Plugin |
+|---|---|---|
+| **What it ships** | One capability (instructions + scripts) | Persona + multiple skills + config |
+| **Install** | Drop into `~/.hermes/skills/` | `hermes plugins install <repo>` |
+| **Activation** | Auto-discovered | Must be enabled (`hermes plugins enable`) |
+| **Example** | `profile-enrichment` — enrich a contact | `kizuna-crm` — full CRM manager persona with 4 skills |
+
+### Installing Plugins
+
+```bash
+# Install from a GitHub repo
+hermes plugins install <owner>/<repo>
+
+# Enable the plugin (activates persona + skills)
+hermes plugins enable <plugin-name>
+
+# Or do both in one shot
+hermes plugins install <owner>/<repo> --enable
+
+# List installed plugins
+hermes plugins list
+
+# Remove a plugin
+hermes plugins remove <plugin-name>
+```
+
+Plugins live under `~/.hermes/plugins/` and take effect immediately after enable — no restart needed. The plugin's `plugin.yaml` declares its name, version, and which skills it registers, while `SOUL.md` defines the persona the agent adopts when the plugin is active.
+
+---
+
 ### [kizuna-crm](./plugins/kizuna-crm/)
 
 A complete CRM management plugin for Hermes Agent — bundles persona, system prompt, and 4 skills into one installable package. Designed for sales teams who need deal tracking, meeting prep, pipeline analytics, and account intelligence in their agent.

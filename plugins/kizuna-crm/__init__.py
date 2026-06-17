@@ -11,10 +11,10 @@ def register(ctx):
 
     # Register bundled skills (namespaced as "plugin:kizuna-crm/<skill-name>")
     skills = [
-        ("kizuna-crm/crm-assistant", str(plugin_dir / "skills" / "crm-assistant" / "SKILL.md")),
-        ("kizuna-crm/client-meeting-prep", str(plugin_dir / "skills" / "client-meeting-prep" / "SKILL.md")),
-        ("kizuna-crm/deal-project-activity-sync", str(plugin_dir / "skills" / "deal-project-activity-sync" / "SKILL.md")),
-        ("kizuna-crm/domain-intel", str(plugin_dir / "skills" / "domain-intel" / "SKILL.md")),
+        ("crm-assistant", plugin_dir / "skills" / "crm-assistant" / "SKILL.md"),
+        ("client-meeting-prep", plugin_dir / "skills" / "client-meeting-prep" / "SKILL.md"),
+        ("deal-project-activity-sync", plugin_dir / "skills" / "deal-project-activity-sync" / "SKILL.md"),
+        ("domain-intel", plugin_dir / "skills" / "domain-intel" / "SKILL.md"),
     ]
 
     for name, path in skills:

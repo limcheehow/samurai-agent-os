@@ -1,5 +1,5 @@
 ---
-name: kizuna-crm/crm-assistant
+name: crm-assistant
 description: "Core CRM operations — deal registration, contact management, company profiles, deal task tracking, and pipeline visibility. Use when asked about deals, companies, contacts, or any CRM workflow."
 license: MIT
 compatibility: "Works with any filesystem-based CRM. Configurable paths for deals, companies, people. Optional: Apollo.io for enrichment."

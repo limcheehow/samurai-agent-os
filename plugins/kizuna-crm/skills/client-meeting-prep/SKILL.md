@@ -1,5 +1,5 @@
 ---
-name: kizuna-crm/client-meeting-prep
+name: client-meeting-prep
 description: "Prepare structured briefings for client and prospect meetings. Research the company, key contacts, recent news, competitive context, and past interactions. Use before any sales call or meeting."
 license: MIT
 ---

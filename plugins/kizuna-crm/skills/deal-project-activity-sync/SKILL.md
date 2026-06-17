@@ -1,5 +1,5 @@
 ---
-name: kizuna-crm/deal-project-activity-sync
+name: deal-project-activity-sync
 description: "Bridge email activity into deal/project pages. Matches senders to contacts, adds timeline entries to linked deals, detects stale/at-risk deals, and creates follow-up tasks."
 license: MIT
 ---

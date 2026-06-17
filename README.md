@@ -5,15 +5,13 @@ A curated collection of **Agent Skills** for AI agents — following the [Agent 
 ## Quick Start
 
 ```bash
-# Clone the repo
+# Option 1: Install skills individually
 git clone https://github.com/limcheehow/samurai-agent-os.git ~/samurai-agent-os
+ln -s ~/samurai-agent-os/skills/profile-enrichment ~/.hermes/skills/
 
-# Link skills into your agent's skill directory
-# For Hermes:
-ln -s ~/samurai-agent-os/skills/* ~/.hermes/skills/
-
-# For OpenClaw / general agents:
-# Point your agent's SKILL_DIR to the skills/ directory
+# Option 2: Install the full Kizuna CRM plugin
+hermes plugins install limcheehow/samurai-agent-os
+hermes plugins enable kizuna-crm
 ```
 
 ## Skills

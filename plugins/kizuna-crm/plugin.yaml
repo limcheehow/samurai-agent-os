@@ -1,0 +1,6 @@
+name: kizuna-crm
+version: "1.0.0"
+description: "CRM Manager plugin — deal tracking, contact management, meeting prep, pipeline analytics, and deal activity sync. Ships Kizuna persona, 4 CRM skills, and Supabase sync example."
+author: Chee How Lim
+license: MIT
+requires_env: []

@@ -51,6 +51,32 @@ The `SKILL.md` file has two parts:
 
 This format follows the open [Agent Skills specification](https://agentskills.io) originally developed at Anthropic and adopted by multiple agent platforms.
 
+## Plugins
+
+### [kizuna-crm](./plugins/kizuna-crm/)
+
+A complete CRM management plugin for Hermes Agent — bundles persona, system prompt, and 4 skills into one installable package. Designed for sales teams who need deal tracking, meeting prep, pipeline analytics, and account intelligence in their agent.
+
+**Skills included:**
+
+| Skill | What it does |
+|-------|--------------|
+| `crm-assistant` | Deal registration, pipeline tracking, contact/company management, task tracking |
+| `client-meeting-prep` | Structured research briefings before every sales call — company background, key contacts, recent activity |
+| `deal-project-activity-sync` | Bridges email activity into deal pages — auto-detects stale deals, flags risks, builds timeline |
+| `domain-intel` | Passive domain reconnaissance — WHOIS lookups, DNS records, SSL certificate inspection |
+
+**Persona:** Kizuna (絆) — warm professional CRM manager, proactive and research-driven.
+
+```bash
+# Install + enable in one shot
+hermes plugins install limcheehow/samurai-agent-os --enable
+```
+
+See the [plugin README](./plugins/kizuna-crm/README.md) for activation instructions and prerequisites.
+
+---
+
 ## Installing Skills
 
 ### On Hermes Agent

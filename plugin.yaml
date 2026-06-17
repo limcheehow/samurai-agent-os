@@ -1,0 +1,4 @@
+name: samurai-agent-os
+version: "1.0.0"
+description: "Agent Skills and Plugins collection. Skills: profile-enrichment. Plugins: kizuna-crm (CRM manager with deal tracking, meeting prep, pipeline analytics)."
+license: MIT
